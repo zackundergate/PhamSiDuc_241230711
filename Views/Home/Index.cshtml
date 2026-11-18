@@ -1,0 +1,15 @@
+﻿<div class="banner"><img src="~/images/banner.jpg" alt="Banner" /></div>
+<div id="khu-vuc-sach">
+    <partial name ="PhamSiDuc_MainContent" model="Model" />
+</div>
+
+@section Scripts
+{
+    <script>
+        function locSach(id){
+            $('#khu-vuc-sach').load('/Home/LocSach?id=' +id);
+        }
+    </script>
+}
+
+           
